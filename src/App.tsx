@@ -17,13 +17,13 @@ export default function App () {
   const [usuarios, setUsuarios] = useState<Array<Object>>([]);
   const [productos, setProductos] = useState<Array<Object>>([]);
 
-  const currentNumber = useTypedSelector((state) => state.IncDec.currentNumber) //getting data from store
+  const currentNumber = useTypedSelector((state) => state.IncDec.currentNumber)
   const [userNumber, setUserNumber] = useState<number>()
 
-  const currentName = useTypedSelector((state) => state.nameUsuario.currentName) //getting data from store
+  const currentName = useTypedSelector((state) => state.nameUsuario.currentName)
   const [userName, setUserName] = useState<string>("")
 
-  const usuariosRedux = useTypedSelector((state) => state.agregarName.currentAgregar) //getting data from store
+  const usuariosRedux = useTypedSelector((state) => state.agregarName.currentAgregar)
   const [userAgregarName, setUserAgregarName] = useState<string>("")
 
   const [count, setCount] = useMyHook();
